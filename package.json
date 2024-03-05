@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/FidelCastro007/Mental-AI-Chat-Bot#readme",
   "dependencies": {
+    "axios": "^1.6.7",
     "body-parser": "^1.20.2",
     "cars": "^1.1.6",
     "cors": "^2.8.5",
