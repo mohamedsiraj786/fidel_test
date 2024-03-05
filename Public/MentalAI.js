@@ -6,6 +6,7 @@ const button = document.querySelector('button');
 const voiceIcon = document.getElementById('voice-icon');
 
 
+
 // Check if the browser supports speech recognition
 if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 
@@ -77,7 +78,7 @@ async function sendMessage() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              apiKey: API_KEY,
+              apiKey: "MM0z6E72hycTCeUFUp68HTkAn4D3",
                 messages: [{ role: 'user', content: userInput }],
             }),
         });

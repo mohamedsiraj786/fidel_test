@@ -2,6 +2,9 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
+
+
 
 let fetch;
 // Use dynamic import
@@ -22,7 +25,7 @@ function startServer() {
     app.use(express.static(path.join(__dirname, 'public')));
 
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'public', 'MentalAI.html'));
+        res.sendFile(path.join(__dirname, 'public', 'index.html'));
     });
 
     app.get('/register', (req, res) => {
