@@ -72,13 +72,13 @@ async function sendMessage() {
         responseContainer.appendChild(userMessage);
 
         // Make a request to your local server
-        let response = await fetch('https://frightened-yoke-bass.cyclic.app/api/chatgpt', {
+        let response = await fetch('http://localhost:3000/api/chatgpt', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              apiKey:"MM0z6E72hycTCeUFUp68HTkAn4D3",
+              apiKey:"shet1oZIP0aYTxJHSH5Pepnj0F72",
                 messages: [{ role: 'user', content: userInput }],
             }),
         });
