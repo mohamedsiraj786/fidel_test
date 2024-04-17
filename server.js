@@ -22,14 +22,14 @@ function startServer() {
     app.use(bodyParser.json());
     app.use(cors());
 
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.static(path.join(__dirname, 'Public')));
 
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'public', 'index.html'));
+        res.sendFile(path.join(__dirname, 'Public', 'index.html'));
     });
 
     app.get('/register', (req, res) => {
-        res.sendFile(__dirname + '/public/register.html');
+        res.sendFile(__dirname + '/Public/register.html');
     });
 
     app.post('/api/chatgpt', async (req, res) => {
