@@ -72,7 +72,7 @@ async function sendMessage() {
         responseContainer.appendChild(userMessage);
 
         // Make a request to your local server
-        let response = await fetch('http://localhost:3000/api/chatgpt', {
+        let response = await fetch('https://easy-cyan-beaver-wig.cyclic.app/api/chatgpt', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
